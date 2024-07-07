@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="container-fluid nav-bar">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-3 sidebar d-flex flex-column flex-shrink-0 p-0 text-bg-dark d-none d-md-flex">
+        <div class="container">
+          <div class="profile">
+            <img src="./asset/IMG_profile.jpg" alt="Profile picture of Aeron Jake Daelo">
+          </div>
+          <div class="profile-name">
+            <a href="/" class="text-white text-decoration-none">
+              <h1 class="fs-4 text-center fw-light mb-3">Aeron Jake Daelo</h1>
+            </a>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container menu-nav">
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="mb-4 mt-3 nav-link active text-bg-dark text-warning" aria-current="page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house me-3" viewBox="0 0 16 16">
+                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" id="About" class="mb-4 nav-link text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-circle me-3" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mb-4 nav-link text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-file-earmark me-3" viewBox="0 0 16 16">
+                  <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                </svg>
+                Resume
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mb-4 nav-link text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-file-code-fill me-3" viewBox="0 0 16 16">
+                  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708"/>
+                </svg>
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mb-4 nav-link text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-lines-fill me-3" viewBox="0 0 16 16">
+                  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                </svg>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      
+      <!-- Main Content -->
+      <div class="col container-fluid">
+        <main class="background">
+          <div class="main-content my-5 text-center d-flex align-items-center justify-content-center flex-column flex-lg-row">
+            <div class="container-fluid col-lg-6 mx-auto mb-4 mb-lg-0">
+              <h1 class="display-5 fw-bold text-start">
+                <span class="fw-light display-6">Welcome, It's me</span> <br>
+                <span class="text-warning">Aeron Jake B. Daelo</span>
+              </h1>
+              <p class="lead mb-4 text-start text-light fw-light">
+                Come see some of the projects I've been working on. Every project, no matter how small, helps my learning process. I'm always trying new things and getting better, so please let me know what you think!
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 text-center image-logo">
+              <img src="./asset/portpolioIMG.jpg" alt="Portfolio image" class="img-fluid">
+            </div>
+          </div>
+        </main>
+      </div>
+      
+      <div class="main-content container-fluid py-3 About bg-light">
+        <div class="container col-lg-6 mx-auto pt-3">
+          <div class="row">
+            <div id="myDiv" class="container-fluid lead">
+              <h1 class="display-5 pt-5 pb-3">About Me</h1>
+              <p class="mb-4">Greetings! I'm Aeron Jake B. Daelo, a dedicated professional with a background in Electronics and Communication Engineering and over 6 years of experience as a Biomedical Engineer. I'm passionate about technology and eager to contribute my skills to the dynamic field of programming.</p>
+              <p class="mb-4">During my career as a Biomedical Engineer, I've developed a strong foundation in problem-solving, critical thinking, and technical expertise. My educational background in Electronics and Communication Engineering has provided me with valuable skills in system design, analysis, and implementation.</p>
+              <p class="mb-4">I'm excited to transition into programming as I see it as an opportunity to blend my technical knowledge with creative problem-solving. My goal is to leverage my experience to develop innovative software solutions that address real-world challenges.</p>
+              <p class="mb-4">I thrive in collaborative environments and am always eager to learn new technologies and techniques. I believe in continuous improvement and am committed to staying updated with the latest developments in the field of programming.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

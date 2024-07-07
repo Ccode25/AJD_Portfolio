@@ -1,24 +1,20 @@
-$("#About").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#myDiv").offset().top
-  }, 100);
-});
+import express from "express"
 
-// $(document).ready(function() {
-//   var navbar = $('.nav-bar');
-//   var lastScrollTop = 0;
+const app = express();
+const port = 3000;
 
-//   $(window).scroll(function() {
-//     var scrollTop = $(this).scrollTop();
+app.set('view engine', 'ejs');
+app.use(express.static("public"))
 
-//     if (scrollTop > lastScrollTop) {
-//       // Downscroll
-//       navbar.css('transform', 'translateY(-100%)'); // Hide navbar
-//     } else {
-//       // Upscroll
-//       navbar.css('transform', 'translateY(0)'); // Show navbar
-//     }
+app.get("/", (req, res) => {
+  res.render('index.ejs', { activePage: 'home' });
+})
 
-//     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-//   });
-// });
+app.get("/about", (req, res) => { 
+  res.render('about.ejs', { activePage: 'about' });
+})
+
+app.listen(port, () => {
+  console.log(`Server running on ${port}.`)
+})
+
