@@ -1,20 +1,42 @@
-import express from "express"
+// s
+// $(document).ready(function() {
+//   var navbar = $('.nav-bar');
+//   var lastScrollTop = 0;
 
-const app = express();
-const port = 3000;
+//   $(window).scroll(function() {
+//     var scrollTop = $(this).scrollTop();
 
-app.set('view engine', 'ejs');
-app.use(express.static("public"))
+//     if (scrollTop > lastScrollTop) {
+//       // Downscroll
+//       navbar.css('transform', 'translateY(-100%)'); // Hide navbar
+//     } else {
+//       // Upscroll
+//       navbar.css('transform', 'translateY(0)'); // Show navbar
+//     }
 
-app.get("/", (req, res) => {
-  res.render('index.ejs', { activePage: 'home' });
-})
+//     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+//   });
+// });
 
-app.get("/about", (req, res) => { 
-  res.render('about.ejs', { activePage: 'about' });
-})
 
-app.listen(port, () => {
-  console.log(`Server running on ${port}.`)
-})
+$(document).ready(function() {
+  // Handle click event for all nav-links
+  $('.nav-link').on('click', function(event) {
+   
+    
+    // Remove text-warning from all nav-links and add text-white
+    $('.nav-link').removeClass('text-warning').addClass('text-white');
+    
+    // Add text-warning to the clicked nav-link
+    $(this).removeClass('text-white').addClass('text-warning');
+  });
+});
+
+
+
+$("#About").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#myDiv").offset().top
+  }, 100);
+});
 
